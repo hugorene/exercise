@@ -195,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				9A14E63A1DD1C153003FF4BF /* CustomTableViewCell */,
-				9AA6B25B1DD1384700494527 /* Share */,
 				9A1783411DD11EF400C53304 /* LaunchScreen.storyboard */,
 				9A17833C1DD11EF400C53304 /* Main.storyboard */,
 			);
@@ -225,13 +224,6 @@
 				9AA6B2551DD136F100494527 /* SearchHandler.swift */,
 			);
 			name = Handler;
-			sourceTree = "<group>";
-		};
-		9AA6B25B1DD1384700494527 /* Share */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Share;
 			sourceTree = "<group>";
 		};
 		E32DC79C2C229FD113CBB825 /* Pods */ = {
