@@ -1,16 +1,16 @@
 # Exercise
 
 
-## Esttructura
+## Estructura
 
-- Model. lugar donde se define un DTO, llamado Item.swift, el cual servira para realizar el mapper utilizando ObjectMapper.
+- Model. lugar donde se define DTOs, se utilizarán para realizar el mapper utilizando ObjectMapper.
 - View. lugar donde se definen elementos relacionados con UI, así como storyboards y CustomTableViewCells.
-- Controller. lugar donde se definen las clases de Cocoa
+- Controller. lugar donde se definen los controllers de Cocoa
 - Handler. Facade que sirve para interactuar con Services, a futuro con base de datos, tracking, etc
 - Service. lugar donde se realiza la comunicación con los end-points
 - Util. elementos complementarios, variables globales, etc
 
 ## Third-party. 
 
-- Alamofire. sirve para la comunicación con los end-points.
-- ObjectMapper. sirve para el mapeo de json a objetos.
+- Alamofire. se utiliza para la comunicación con los end-points.
+- ObjectMapper. se utiliza para el mapeo de json a objetos.
