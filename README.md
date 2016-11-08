@@ -12,13 +12,14 @@ EL proyecto se encuentra estructurado de la siguiente manera:
 - Service. lugar donde se realiza la comunicación con los end-points utilizando Alamofire.
 - Util. elementos complementarios, variables globales, etc
 
-## Third-party. 
+
+## Third-party
 
 - Alamofire. se utiliza para la comunicación con los end-points.
 - ObjectMapper. se utiliza para el mapeo de json a objetos.
 
 
-## Tests. 
+## Tests 
 
 - Unit testing. se realizó tres tests básicos de consumo del servicio.
 - UI test. se realizó un test básico de navegabilidad y búsqueda de un item.
