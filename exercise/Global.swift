@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Global {
+    static let urlSearchItem = "http://api-v2.olx.com/items?location=www.olx.com.ar&searchTerm=%@"
+}

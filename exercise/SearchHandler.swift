@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class SearchHandler {
+    static func listingItemsByTerm(searchTerm: String, completion: @escaping (_ result: [Item]?) -> Void) {
+        let url = String(format: Global.urlSearchItem, arguments: [searchTerm])
+        
+        SearchService.searchItem(url: url) { (result: [Item]?) in
+            completion(result)
+        }
+    }
+}

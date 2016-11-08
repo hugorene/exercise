@@ -9,6 +9,9 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +24,19 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func search(_ sender: UIButton) {
+        self.activityIndicator.startAnimating()
+        SearchHandler.listingItemsByTerm(searchTerm: self.searchTextField.text!) { (result: [Item]?) in
+            self.activityIndicator.stopAnimating()
+            self.performSegue(withIdentifier: "ListingSegue", sender: result)
+        }
     }
-    */
 
+    // MARK: - Navigation
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let listingViewController = segue.destination as! ListingViewController
+        listingViewController.items = sender as! [Item]
+    }
+ 
 }

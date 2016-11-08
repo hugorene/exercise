@@ -21,6 +21,7 @@ class exerciseUITests: XCTestCase {
         XCUIApplication().launch()
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+      
     }
     
     override func tearDown() {
@@ -28,9 +29,12 @@ class exerciseUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSearchItem() {
+        let app = XCUIApplication()
+        let textField = app.otherElements.containing(.navigationBar, identifier:"Búsqueda").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .textField).element
+        textField.tap()
+        textField.typeText("autos")
+        app.buttons["buscar"].tap()
     }
-    
+        
 }

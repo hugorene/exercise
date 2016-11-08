@@ -33,4 +33,40 @@ class exerciseTests: XCTestCase {
         }
     }
     
+    func testSearchAutosService() {
+        let expectationTest = expectation(description: "Search autos")
+        
+        //let thingy = SearchService()
+        SearchService.searchItem(url: "http://api-v2.olx.com/items?location=www.olx.com.ar&searchTerm=autos") { string in
+            XCTAssertNotNil(string, "Expected non-nil string")
+            expectationTest.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+    
+    func testSearchCasasService() {
+        let expectationTest = expectation(description: "Search casas")
+        
+        //let thingy = SearchService()
+        SearchService.searchItem(url: "http://api-v2.olx.com/items?location=www.olx.com.ar&searchTerm=casas") { string in
+            XCTAssertNotNil(string, "Expected non-nil string")
+            expectationTest.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+    
+    func testSearchEmptyService() {
+        let expectationTest = expectation(description: "Search empty")
+        
+        //let thingy = SearchService()
+        SearchService.searchItem(url: "http://api-v2.olx.com/items?location=www.olx.com.ar&searchTerm=") { string in
+            XCTAssertNotNil(string, "Expected non-nil string")
+            expectationTest.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
+    }
+    
 }
