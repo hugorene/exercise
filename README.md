@@ -1,7 +1,9 @@
-# Exercise
+# Exercise Project
 
 
 ## Estructura
+
+EL proyecto se encuentra estructurado de la siguiente manera:
 
 - Model. lugar donde se define DTOs, se utilizarán para realizar el mapper utilizando ObjectMapper.
 - View. lugar donde se definen elementos relacionados con UI, así como storyboards y CustomTableViewCells.
