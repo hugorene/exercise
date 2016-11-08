@@ -16,3 +16,9 @@ EL proyecto se encuentra estructurado de la siguiente manera:
 
 - Alamofire. se utiliza para la comunicación con los end-points.
 - ObjectMapper. se utiliza para el mapeo de json a objetos.
+
+
+## Tests. 
+
+- Unit testing. se realizó tres tests básicos de consumo del servicio.
+- UI test. se realizó un test básico de navegabilidad y búsqueda de un item.
