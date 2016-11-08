@@ -9,7 +9,7 @@ EL proyecto se encuentra estructurado de la siguiente manera:
 - View. lugar donde se definen elementos relacionados con UI, así como storyboards y CustomTableViewCells.
 - Controller. lugar donde se definen los controllers de Cocoa
 - Handler. Facade que sirve para interactuar con Services, a futuro con base de datos, tracking, etc
-- Service. lugar donde se realiza la comunicación con los end-points
+- Service. lugar donde se realiza la comunicación con los end-points utilizando Alamofire.
 - Util. elementos complementarios, variables globales, etc
 
 ## Third-party. 
